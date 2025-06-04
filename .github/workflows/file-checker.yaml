@@ -1,0 +1,20 @@
+name: File Checker
+
+on: push
+
+jobs:
+  Check-File:
+    runs-on: ubuntu-latest
+    steps:
+
+    - name: Check out code
+      uses: actions/checkout@v4
+
+    - name: Check if config.txt exists
+      run: |
+        if [ -f "config.txt" ]; then
+          echo "✅ config.txt found!"
+        else
+          echo "❌ config.txt is missing!"
+          exit 1
+        fi        
