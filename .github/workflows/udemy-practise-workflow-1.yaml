@@ -9,7 +9,7 @@ jobs:
       - name: Check out code
         uses: actions/checkout@v4
       - name: Install dependencies
-        run: npm ci               #faster & more CI-friendly than npm install
+        run: npm install
       - name: Run Linter
         run: npm run lint
       - name: Run Tests
