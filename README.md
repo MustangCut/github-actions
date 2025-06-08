@@ -1,1 +1,1 @@
-# This repo contains my CI/CD practise with GitHub Actions!
+# This repo contains my CI/CD practice with GitHub Actions!
