@@ -1,6 +1,6 @@
 name: Environment Variable
 
-on: push
+on: workflow_dispatch
 
 env:
   PROJECT_NAME: "MustangCut"
